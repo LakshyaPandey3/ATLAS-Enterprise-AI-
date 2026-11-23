@@ -21,6 +21,11 @@ class Settings(BaseSettings):
     min_relevance:float=0.25
     hitl_enabled:bool=True
     memory_turns:int=6
+    # Single-workspace demo identity (not production authentication)
+    demo_tenant_id: str = 'atlas-demo'
+    demo_subject: str = 'demo-user'
+    demo_groups: str = 'workspace'
+    demo_admin: bool = True
 
 
 @lru_cache
